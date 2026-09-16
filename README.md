@@ -4,6 +4,12 @@ Smart Step is an **LLM-powered mobile wellness prototype** built with Expo, Reac
 
 > **Portfolio prototype — not medical advice.** Smart Step does not diagnose, treat, or replace a qualified professional. AI output can be wrong. Plans intended for children should be reviewed by a responsible adult. Do not enter names, addresses, school details, medical records, or precise locations in chat.
 
+## Demo video
+
+▶️ **[Watch the 94-second Smart Step mobile demo](docs/demo/SmartSteps.mp4)**
+
+The portrait recording demonstrates the main mobile experience and is stored directly in this repository for convenient portfolio review.
+
 ## Highlights
 
 - **Secure AI architecture:** OpenRouter credentials remain in a Vercel server function, never in the mobile bundle.
@@ -77,6 +83,7 @@ lib/location.ts                   Distance and GPS filtering logic
 lib/start-route.ts                Hydration-aware startup routing
 lib/__tests__/                    Core unit tests
 services/chatApi.ts               Mobile API client
+docs/demo/SmartSteps.mp4          Mobile walkthrough video
 ```
 
 ## Local setup
@@ -184,21 +191,23 @@ npx eas-cli@latest env:create --environment preview --name EXPO_PUBLIC_API_BASE_
 npx eas-cli@latest build --platform android --profile preview
 ```
 
-Add the resulting install URL and a short screen recording to this README before sharing the portfolio.
+Add the resulting install URL to this README before sharing the installable preview.
 
-## Suggested showcase assets
+## Showcase assets
 
-Create `docs/screenshots/` and add screenshots without real chat text or precise routes:
+The repository includes a [94-second mobile demo video](docs/demo/SmartSteps.mp4).
+
+For additional visual context, create `docs/screenshots/` and add screenshots without real chat text or precise routes:
 
 | AI coach | Personalized activities | Walk tracker | Leaderboard |
 | --- | --- | --- | --- |
 | Add screenshot | Add screenshot | Add screenshot | Add screenshot |
 
-Also add:
+Possible additions:
 
-- A 30–60 second walkthrough video.
 - The EAS preview APK link.
-- A short explanation of the safety and schema-validation decisions.
+- Curated screenshots for quick scanning.
+- A hosted video mirror if inline playback is preferred.
 
 ## Privacy and safety
 
