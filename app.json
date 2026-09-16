@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Smart Step",
+    "slug": "smart-step",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo_smart_step.png",
+    "scheme": "smartstep",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/logo_smart_step.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFF9F5"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.smartstep.fitness",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Allow $(PRODUCT_NAME) to access your location while tracking a walking or running activity"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/logo_smart_step.png",
+        "backgroundColor": "#FFF9F5"
+      },
+      "package": "app.smartstep.fitness",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow $(PRODUCT_NAME) to access your location while tracking a walking or running activity"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
