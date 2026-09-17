@@ -6,6 +6,8 @@ Smart Step is an LLM-powered mobile wellness prototype built with Expo, React Na
 
 ## Demo
 
+[![Watch the Smart Step demo](docs/demo/preview.png)](docs/demo/SmartSteps.mp4)
+
 ▶️ **[Watch the 94-second mobile demo](docs/demo/SmartSteps.mp4)**
 
 ## Features
